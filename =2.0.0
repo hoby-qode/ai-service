@@ -1,0 +1,25 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: rembg in c:\users\uixdev\appdata\roaming\python\python314\site-packages (2.0.68)
+Collecting jsonschema (from rembg)
+  Using cached jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: numpy in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from rembg) (2.3.4)
+Collecting opencv-python-headless (from rembg)
+  Using cached opencv_python_headless-4.12.0.88-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Requirement already satisfied: pillow in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from rembg) (12.0.0)
+Collecting pooch (from rembg)
+  Using cached pooch-1.8.2-py3-none-any.whl.metadata (10 kB)
+Collecting pymatting (from rembg)
+  Using cached pymatting-1.1.14-py3-none-any.whl.metadata (7.7 kB)
+Collecting scikit-image (from rembg)
+  Using cached scikit_image-0.25.2.tar.gz (22.7 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): finished with status 'error'

@@ -1,0 +1,47 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting transformers
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: filelock in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from transformers) (3.20.0)
+Collecting huggingface-hub<1.0,>=0.34.0 (from transformers)
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from transformers) (2.3.4)
+Collecting packaging>=20.0 (from transformers)
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from transformers) (6.0.3)
+Collecting regex!=2019.12.17 (from transformers)
+  Downloading regex-2025.11.3-cp314-cp314-win_amd64.whl.metadata (41 kB)
+Collecting requests (from transformers)
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers)
+  Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+Collecting safetensors>=0.4.3 (from transformers)
+  Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl.metadata (4.2 kB)
+Collecting tqdm>=4.27 (from transformers)
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (2025.10.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.15.0)
+Requirement already satisfied: colorama in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from tqdm>=4.27->transformers) (0.4.6)
+Collecting charset_normalizer<4,>=2 (from requests->transformers)
+  Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl.metadata (38 kB)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\uixdev\appdata\roaming\python\python314\site-packages (from requests->transformers) (3.11)
+Collecting urllib3<3,>=1.21.1 (from requests->transformers)
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->transformers)
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ---------------------------------------- 12.0/12.0 MB 316.8 kB/s  0:00:49
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ---------------------------------------- 566.1/566.1 kB 341.9 kB/s  0:00:01
+Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl (2.7 MB)
+   ---------------------------------------- 2.7/2.7 MB 245.1 kB/s  0:00:10
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Downloading regex-2025.11.3-cp314-cp314-win_amd64.whl (280 kB)
+Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl (341 kB)
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl (107 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+Installing collected packages: urllib3, tqdm, safetensors, regex, packaging, charset_normalizer, certifi, requests, huggingface-hub, tokenizers, transformers
+
+Successfully installed certifi-2025.11.12 charset_normalizer-3.4.4 huggingface-hub-0.36.0 packaging-25.0 regex-2025.11.3 requests-2.32.5 safetensors-0.7.0 tokenizers-0.22.1 tqdm-4.67.1 transformers-4.57.3 urllib3-2.5.0

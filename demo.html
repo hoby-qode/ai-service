@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo Suppression d'Arrière-Plan</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { margin-bottom: 20px; }
+        #resultImage { max-width: 100%; height: auto; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Démo Suppression d'Arrière-Plan</h1>
+    <form id="uploadForm">
+        <input type="file" id="imageInput" accept="image/*" required>
+        <button type="submit">Supprimer Arrière-Plan</button>
+    </form>
+    <div id="result">
+        <img id="resultImage" style="display:none;" alt="Image traitée">
+    </div>
+    <div id="error" style="color: red; display: none;"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('imageInput');
+            const file = fileInput.files[0];
+            if (!file) return;
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const errorDiv = document.getElementById('error');
+            errorDiv.style.display = 'none';
+
+            try {
+                const response = await fetch('http://localhost:8000/remove-background', {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const img = document.getElementById('resultImage');
+                    img.src = URL.createObjectURL(blob);
+                    img.style.display = 'block';
+                } else {
+                    const errorData = await response.json();
+                    errorDiv.textContent = errorData.detail.message || 'Erreur lors du traitement';
+                    errorDiv.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                errorDiv.textContent = 'Erreur de connexion au service';
+                errorDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">d:\KANDRA\Serahly\ai-service\demo.html
